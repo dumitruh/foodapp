@@ -5,9 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
+    loadedFeature = 'recipe';
   
-constructor (){
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+  }
+
+  constructor (){
 
 }
 
