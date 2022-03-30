@@ -10,6 +10,7 @@ import { RecipeService } from '../recipe.service';
   styleUrls: ['./recipe-edit.component.css']
 })
 export class RecipeEditComponent implements OnInit {
+ /* A property of the class RecipeEditComponent. */
   id: number;
   editMode = false;
   recipeForm: FormGroup;

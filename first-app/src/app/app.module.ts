@@ -19,6 +19,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 import { RecipeService } from './recipes/recipe.service';
 
 
+/* A list of all the components that are part of this module. */
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,8 +32,10 @@ import { RecipeService } from './recipes/recipe.service';
     ShoppingEditComponent,
     DropdownDirective,
     RecipeStartComponent,
-    RecipeEditComponent,
+    RecipeEditComponent
   ],
+
+ /* This is the list of all the modules that are imported from angular into this module. */
   imports: [
     BrowserModule,
     FormsModule,
@@ -40,6 +43,8 @@ import { RecipeService } from './recipes/recipe.service';
     HttpClientModule,
     AppRoutingModule
   ],
+  
+  /* A list of all the services that are used by this module. */
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
 })

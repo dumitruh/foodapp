@@ -13,11 +13,7 @@ export class AppComponent implements OnInit {
     this.loadedFeature = feature;
   }
 
-  constructor (){
+  constructor (){}
 
-}
-
-ngOnInit (){
-
-}
+ngOnInit (){}
 }

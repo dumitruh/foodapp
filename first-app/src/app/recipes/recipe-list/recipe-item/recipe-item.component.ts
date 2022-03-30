@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core'; //first import input 
 import { Recipe } from '../../recipe.model';
 
 @Component({
@@ -7,8 +7,9 @@ import { Recipe } from '../../recipe.model';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-  //decorator @input bind from outside
-  @Input() recipe: Recipe;
+  
+/* This is a decorator. It is a way to add metadata to our class. */
+  @Input() recipe: Recipe; /*decorator @input bind from outside, use it in child component*/
   @Input() index: number;
 
   constructor() { }

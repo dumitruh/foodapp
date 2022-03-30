@@ -11,7 +11,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnInit, OnDestroy{
-      @ViewChild('f') slForm: NgForm;
+/* Creating a new instance of the class. */
+      @ViewChild('f') slForm: NgForm; /* A directive that is part of the Angular Forms API. It is a wrapper around the standard HTML form element. */
       private subscription: Subscription;
       editMode= false;
       editedItemIndex: number;
