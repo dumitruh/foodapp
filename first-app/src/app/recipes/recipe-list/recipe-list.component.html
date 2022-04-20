@@ -1,20 +1,24 @@
 <div class="recipe-list">
-<div class="row">
-  <div class="col-xs-12">
-    <button 
-        class="btn btn-success" 
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-success"
         (click)="onNewRecipe()"
-        style="margin-bottom: 10px;"
-       title="new recipe">New recipe</button>
+        style="margin-bottom: 10px"
+        title="new recipe"
+      >
+        New recipe
+      </button>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col-xs-11">
-    <app-recipe-item 
-    *ngFor="let recipeEl of recipes; let i=index" 
-    [recipe]="recipeEl"
-    [index]="i"></app-recipe-item>
+  <div class="row">
+    <div class="col-xs-11">
+      <app-recipe-item
+        *ngFor="let recipeEl of recipes; let i = index"
+        [recipe]="recipeEl"
+        [index]="i"
+      ></app-recipe-item>
+    </div>
   </div>
-</div>
 </div>
